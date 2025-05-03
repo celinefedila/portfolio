@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  img {
+    /*max-width: 100%; /* Rendre l'image responsive */
+    /*width: auto;*/
+    /*max-height: 100%;*/
+    display: block; /* Pour utiliser les marges */
+    margin: auto; /* Pour centrer l'image */
+    height: 100vh;
+    width: auto;
+    border: 5px solid #ecb327; /* Crée un cadre de 5px d'épaisseur */
+    border-radius: 10px; /* arrondi les bords du cadre */
+    box-sizing: border-box; /* Inclut le cadre dans les dimensions de l'image */
+
+  }
+
+  /* CSS */
+.custom-tooltip .tooltip-inner {
+  background-color: #ff0d00; /* Couleur de fond */
+  color: #333333; /* Couleur du texte */
+  font-size: 14px; /* Taille du texte */
+  font-family: 'Arial', sans-serif; /* Style de la police */
+  padding: 10px; /* Espacement interne */
+  border-radius: 8px; /* Bords arrondis */
+}
+
+
+
+.custom-tooltip .tooltip-arrow {
+  border-top-color: #ff9e99; /* Couleur de la flèche */
+}
+
+  
