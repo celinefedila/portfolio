@@ -1,13 +1,15 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=5, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/script.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+    <script src="js/script.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <style>
       body {
           background-color: #ecb327; /* Couleur du fond */
@@ -16,21 +18,95 @@
 
 </head>
 <body>
-  <img id="fond" src="images/fond.JPG" alt="Fond" usemap="#fond-map">
-  <map name="fond-map">
-    <!--<area id="coupe" shape="rect" alt="coupe">-->
-    <area id="coupe" shape="rect" href="coupe.html" data-bs-toggle="tooltip" title="Mes competences" alt="coupe">
-    <area id="ordinateur" shape="rect" href="ordinateur.html" data-bs-toggle="tooltip" title="Mes Projets" alt="ordinateur">  
-    <area id="badge" shape="rect" href="badge.html" data-bs-toggle="tooltip" title="Alternance" alt="badge">  
-    <area id="tablette" shape="rect" href="tablette.html" data-bs-toggle="tooltip" title="Ma veille technologique" alt="tablette">  
-    <area id="planning" shape="rect" href="planning.html" data-bs-toggle="tooltip" title="Mes formations" alt="planning">  
+    <img id="fond" src="images/fond.JPG" alt="Fond" usemap="#fond-map">
+    <map name="fond-map">
+      <!--<area id="coupe" shape="rect" alt="coupe">-->
+      <area id="planning" shape="rect" title="Mes formations" alt="planning"data-bs-toggle="modal" data-bs-target="#planningModal">
+      <area id="coupe" shape="rect"  title="Mes competences" alt="coupe" data-bs-toggle="modal" data-bs-target="#coupeModal">
+      <area id="badge" shape="rect" title="Alternance" alt="badge" data-bs-toggle="modal" data-bs-target="#badgeModal">
+      <area id="ordinateur" shape="rect" title="Mes Projets" alt="ordinateur" data-bs-toggle="modal" data-bs-target="#ordinateurModal">
+      <area id="tablette" shape="rect title="Ma veille technologique" alt="tablette" data-bs-toggle="modal" data-bs-target="#tabletteModal">  
 
-    <!--<area id="zone2" shape="circle" alt="Zone 2">-->
-  </map>
+      <!--<area id="zone2" shape="circle" alt="Zone 2">-->
+    </map>
 
 
-</head>
-<body>
+  <!-- Modal planning -->
+  <div class="modal fade" id="planningModal" tabindex="-1" aria-labelledby="planningModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="planningModalLabel">Mes cours</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ici tu présentes tes cours ...
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+      <!-- Modal coupe -->
+      <div class="modal fade" id="coupeModal" tabindex="-1" aria-labelledby="coupeModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="coupeModalLabel">Mes compétences</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ici tu présentes tes compétences ...
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <!-- Modal badge -->
+    <div class="modal fade" id="badgeModal" tabindex="-1" aria-labelledby="badgeModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="badgeModalLabel">Mes expériences pro</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            ici tu présentes tes experiences pro ...
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal ordinateur -->
+    <div class="modal fade" id="ordinateurModal" tabindex="-1" aria-labelledby="ordinateurModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="ordinateurModalLabel">Mes projets</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            ici tu présentes tes projets ...
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal tablette -->
+    <div class="modal fade" id="tabletteModal" tabindex="-1" aria-labelledby="tabletteModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="tabletteModalLabel">Moi ?</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            ici tu te ? présentes ...
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
     
-</body>
 </html>
