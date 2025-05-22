@@ -18,14 +18,14 @@
 
 </head>
 <body>
-    <img id="fond" src="images/fond.JPG" alt="Fond" usemap="#fond-map">
+    <img id="fond" src="images/fond.jpg" alt="Fond" usemap="#fond-map">
     <map name="fond-map">
       <!--<area id="coupe" shape="rect" alt="coupe">-->
       <area id="planning" shape="rect" title="Mes formations" alt="planning"data-bs-toggle="modal" data-bs-target="#planningModal">
       <area id="coupe" shape="rect"  title="Mes competences" alt="coupe" data-bs-toggle="modal" data-bs-target="#coupeModal">
       <area id="badge" shape="rect" title="Alternance" alt="badge" data-bs-toggle="modal" data-bs-target="#badgeModal">
       <area id="ordinateur" shape="rect" title="Mes Projets" alt="ordinateur" data-bs-toggle="modal" data-bs-target="#ordinateurModal">
-      <area id="tablette" shape="rect title="Ma veille technologique" alt="tablette" data-bs-toggle="modal" data-bs-target="#tabletteModal">  
+      <area id="tablette" shape="rect" title="Ma veille technologique" alt="tablette" data-bs-toggle="modal" data-bs-target="#tabletteModal">  
 
       <!--<area id="zone2" shape="circle" alt="Zone 2">-->
     </map>
@@ -36,7 +36,7 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="planningModalLabel">Mes cours</h5>
+          <h5 class="modal-title" id="planningModalLabel">Mes formations</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -56,7 +56,10 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              ici tu présentes tes compétences ...
+              <p><font face="Bookman Old Style, Book Antiqua, Garamond">
+                <h5>Vous retrouverez le tableau récapitulatif de mes compétences ainsi que mon dossier de preuve référençant des captures d'écrans et mises en situation pour illustrer chacunes de mes compétences.</h5>
+                <iframe src="documents/tableau_compétences.pdf" width="100%" height="500px"> </iframe>
+              </font></p>
             </div>
           </div>
         </div>
@@ -67,26 +70,64 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="badgeModalLabel">Mes expériences pro</h5>
+            <h5 class="modal-title" id="badgeModalLabel">Mes expériences professionnelles</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            ici tu présentes tes experiences pro ...
+            <p><font face="Bookman Old Style, Book Antiqua, Garamond">
+              <h5>Alternance Technicienne informatique - CHU Jean Minjoz (2 ans)</h5>
+              <br>
+              Au cours de mon alternance au CHU, j'ai pu travailler dans leurs différents services informatiques. J'ai d'abord commencé en tant que technicienne au service proximité où j'ai pu répondre aux incidents et demandes des différents utilisateurs de l'hôpital. 
+              <br>
+              Après avoir maîtrisé les compétences requises en tant que technicienne, j'ai intégré le service application et entrepris des projets internes visant, par exemple, à déterminer les solutions informatiques les plus adéquates pour la gestion des réservations de cours collectifs pour la salle de sport des employés et la plateforme de e-learning du CHU. Dans le cadre de ces projets, j'ai eu la chance de travailler de manière collaborative avec des utilisateurs test pour confirmer l'efficacité des solutions explorées.
+              <br>
+              Mon alternance au sein du CHU s'est surtout caractérisée par mon engagement envers les utilisateurs et la prise en charge de leurs demandes, que ce soit en matière de parc informatique ou de besoins d'applications spécifiques qui m'ont été déléguées.
+            </p>
           </div>
         </div>
       </div>
     </div>
 
     <!-- Modal ordinateur -->
-    <div class="modal fade" id="ordinateurModal" tabindex="-1" aria-labelledby="ordinateurModalLabel" aria-hidden="true">
+    <div class="modal fade modal-dialog-scrollable" id="ordinateurModal" tabindex="-1" aria-labelledby="ordinateurModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="ordinateurModalLabel">Mes projets</h5>
+            <h5 class="modal-title" id="ordinateurModalLabel">Mes projets en cours de formation :</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            ici tu présentes tes projets ...
+            <p><font face="Bookman Old Style, Book Antiqua, Garamond">
+              <h5>Réseau des anciens élèves du lycée Pasteur Mont Roland - Laravel</h5>
+              La responsable chargée du projet Alumni nous a énoncé son besoin : la création d'un outil informatique pour le réseau des anciens élèves. Cela leur permettra de centraliser leur carnet d'adresse, de récolter des offres de stages, d'emplois ou d'alternance ainsi que de faire durer le lien avec leurs anciens élèves en proposant des événements de retrouvailles.
+              Vous pouvez retrouver le projet via le <a href="https://github.com/ap3-journee-integration-team/ap3_journee_integration-ebd5a22e.git" target="_blank">répertoire GitHub associé</a>. <!--gitea accessible seulement avec asio !!!-->
+              <br>
+              <br>
+              <u>Front utilisateur :</u>
+              <img src="images/alumniLogin.png" class="img-fluid" alt="alumniLogin">
+              <br>
+              <br>
+              <u>Panel administrateur :</u>
+              <img src="images/alumniAdmin.png" class="img-fluid" alt="alumniAdmin">
+            </p>
+            <br>
+            <p><font face="Bookman Old Style, Book Antiqua, Garamond">
+              <h5>Gestion des journées d'intégration du lycée Pateur Mont Roland - C#</h5>
+              Cet outil à pour objectif de gérer les aspects d'une journée d'intégration, si bien au niveau des jours choisis, des épreuves proposées que des équipes créées. Une application lourde en C# à donc été créée pour répondre à ce besoin.
+              Vous pouvez retrouver le projet via le <a href="https://github.com/ap3-journee-integration-team/ap3_journee_integration-ebd5a22e.git" target="_blank">répertoire GitHub associé</a>.
+              <br>
+              <br>
+              <u>Gestion des épreuves :</u>
+              <img src="images/ap3Epreuve.png" class="img-fluid" alt="ap3Epreuve">
+              <br>
+              <br>
+              <u>Gestion des journées d'intégration :</u>
+              <img src="images/ap3Journee.png" class="img-fluid" alt="ap3Journee">
+              <br>
+              <br>
+              <u>Ajouter des épreuves à une journée :</u>
+              <img src="images/ap3Associer.png" class="img-fluid" alt="ap3Associer">
+            </font></p>
           </div>
         </div>
       </div>
@@ -97,11 +138,11 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="tabletteModalLabel">Moi ?</h5>
+            <h5 class="modal-title" id="tabletteModalLabel">Veille technologique</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            ici tu te ? présentes ...
+            Angular
           </div>
         </div>
       </div>
