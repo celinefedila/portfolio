@@ -21,15 +21,34 @@
     <img id="fond" src="images/fond.jpg" alt="Fond" usemap="#fond-map">
     <map name="fond-map">
       <!--<area id="coupe" shape="rect" alt="coupe">-->
+      <area id="persona" shape="rect" title="Céline FEDILA" alt="persona"data-bs-toggle="modal" data-bs-target="#personaModal">
       <area id="planning" shape="rect" title="Mes formations" alt="planning"data-bs-toggle="modal" data-bs-target="#planningModal">
       <area id="coupe" shape="rect"  title="Mes competences" alt="coupe" data-bs-toggle="modal" data-bs-target="#coupeModal">
-      <area id="badge" shape="rect" title="Alternance" alt="badge" data-bs-toggle="modal" data-bs-target="#badgeModal">
+      <area id="badge" shape="rect" title="Mes expériences professionnelles" alt="badge" data-bs-toggle="modal" data-bs-target="#badgeModal">
       <area id="ordinateur" shape="rect" title="Mes Projets" alt="ordinateur" data-bs-toggle="modal" data-bs-target="#ordinateurModal">
       <area id="tablette" shape="rect" title="Ma veille technologique" alt="tablette" data-bs-toggle="modal" data-bs-target="#tabletteModal">  
 
       <!--<area id="zone2" shape="circle" alt="Zone 2">-->
     </map>
 
+  <!-- Modal persona -->
+  <div class="modal fade" id="personaModal" tabindex="-1" aria-labelledby="personaModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="personaModalLabel">Céline FEDILA</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+              <h5>Me contacter :</h5>
+              <a id="logo-linkedin" href="https://www.linkedin.com/in/c%C3%A9line-fedila-0738a4276/" target="_blank">
+                <img  id="logo-linkedin" src="images/logo-linkedin.webp" alt="logo-linkedin" >
+              </a>
+              <br>
+              <iframe src="documents/cv_celine_fedila.pdf" width="100%" height="500px"> </iframe>        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Modal planning -->
   <div class="modal fade" id="planningModal" tabindex="-1" aria-labelledby="planningModalLabel" aria-hidden="true">
@@ -40,8 +59,9 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          ici tu présentes tes cours ...
-        </div>
+              <h5>Livret de suivi :</h5>
+              <br>
+              <iframe src="documents/livret-suivi.pdf" width="100%" height="500px"> </iframe>        </div>
       </div>
     </div>
   </div>
@@ -59,6 +79,7 @@
               <p><font face="Bookman Old Style, Book Antiqua, Garamond">
                 <h5>Vous retrouverez le tableau récapitulatif de mes compétences ainsi que mon dossier de preuve référençant des captures d'écrans et mises en situation pour illustrer chacunes de mes compétences.</h5>
                 <iframe src="documents/tableau_compétences.pdf" width="100%" height="500px"> </iframe>
+                <iframe src="documents/dossier-preuve.pdf" width="100%" height="500px"> </iframe>
               </font></p>
             </div>
           </div>
@@ -100,33 +121,19 @@
             <p><font face="Bookman Old Style, Book Antiqua, Garamond">
               <h5>Réseau des anciens élèves du lycée Pasteur Mont Roland - Laravel</h5>
               La responsable chargée du projet Alumni nous a énoncé son besoin : la création d'un outil informatique pour le réseau des anciens élèves. Cela leur permettra de centraliser leur carnet d'adresse, de récolter des offres de stages, d'emplois ou d'alternance ainsi que de faire durer le lien avec leurs anciens élèves en proposant des événements de retrouvailles.
-              Vous pouvez retrouver le projet via le <a href="https://github.com/ap3-journee-integration-team/ap3_journee_integration-ebd5a22e.git" target="_blank">répertoire GitHub associé</a>. <!--gitea accessible seulement avec asio !!!-->
               <br>
-              <br>
-              <u>Front utilisateur :</u>
-              <img src="images/alumniLogin.png" class="img-fluid" alt="alumniLogin">
-              <br>
-              <br>
-              <u>Panel administrateur :</u>
-              <img src="images/alumniAdmin.png" class="img-fluid" alt="alumniAdmin">
+              Ci-dessous, le document ressençant l'avancement du projet et des captures d'écran du travail effectué.
+              <iframe src="documents/ficheE5-ap4.pdf" width="100%" height="500px"> </iframe>
             </p>
             <br>
+
             <p><font face="Bookman Old Style, Book Antiqua, Garamond">
               <h5>Gestion des journées d'intégration du lycée Pateur Mont Roland - C#</h5>
               Cet outil à pour objectif de gérer les aspects d'une journée d'intégration, si bien au niveau des jours choisis, des épreuves proposées que des équipes créées. Une application lourde en C# à donc été créée pour répondre à ce besoin.
               Vous pouvez retrouver le projet via le <a href="https://github.com/ap3-journee-integration-team/ap3_journee_integration-ebd5a22e.git" target="_blank">répertoire GitHub associé</a>.
               <br>
-              <br>
-              <u>Gestion des épreuves :</u>
-              <img src="images/ap3Epreuve.png" class="img-fluid" alt="ap3Epreuve">
-              <br>
-              <br>
-              <u>Gestion des journées d'intégration :</u>
-              <img src="images/ap3Journee.png" class="img-fluid" alt="ap3Journee">
-              <br>
-              <br>
-              <u>Ajouter des épreuves à une journée :</u>
-              <img src="images/ap3Associer.png" class="img-fluid" alt="ap3Associer">
+              Ci-dessous, le document ressençant l'avancement du projet et des captures d'écran du travail effectué.
+              <iframe src="documents/ficheE5-ap3.pdf" width="100%" height="500px"> </iframe>
             </font></p>
           </div>
         </div>
@@ -142,7 +149,11 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            Angular
+            <p><font face="Bookman Old Style, Book Antiqua, Garamond">
+              <h5>Dans le cadre de mon BTS j'ai eu a mener une veille technologique. Mon choix s'est porté sur le Framework Angular.</h5>
+              <br>
+              <iframe src="documents/veille-etchnologique.pdf" width="100%" height="500px"> </iframe>
+            </font></p>
           </div>
         </div>
       </div>
